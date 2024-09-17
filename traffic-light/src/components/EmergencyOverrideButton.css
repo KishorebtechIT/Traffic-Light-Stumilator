@@ -1,0 +1,16 @@
+/* src/components/EmergencyOverrideButton.css */
+.emergency-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-button:hover {
+  background-color: darkred;
+}
