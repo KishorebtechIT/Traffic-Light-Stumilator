@@ -1,7 +1,7 @@
 In this project I Build a Traffic Light Simulator with Pedestrian Crossing.
 
-install depencies using "npm install"
-run app using "npm run dev"
+install depencies using -- "npm install"
+run app using -- "npm run dev"
 
 implemented the below requirements:
 
@@ -13,18 +13,18 @@ implemented the below requirements:
 						
 2. Pedestrian Crossing:
 						
-- Added a pedestrian crossing button, when it's clicked, requests to change the light to Red for vehicles to allow pedestrians to cross safely.						
-- If the button is clicked while the light is Green or Yellow, it wait for the current sequence to complete before switching to Red.						
+- Added a pedestrian crossing button, when it's clicked, requests to change the light to Red for vehicles to allow pedestrians to cross safely.			
+- If the button is clicked while the light is Green or Yellow, it wait for the current sequence to complete before switching to Red.				
 - After the pedestrian crossing request, the light stay Red for an additional 5 seconds, allowing pedestrians to cross, before returning to the normal sequence.
 						
 3. useContext State Management:
 						
-- Use useContext to manage the state of the traffic light system, including the current light, pedestrian crossing request, and timers.						
+- Use useContext to manage the state of the traffic light system, including the current light, pedestrian crossing request, and timers.				
 - Include actions and reducers for changing the light, managing the pedestrian crossing request, and handling the timing of each light.
 						
 4. Timers and Delays:
 						
-- Using JavaScript timers (setInterval or setTimeout) within your useContext actions or middleware to handle the light transitions.						
+- Using JavaScript timers (setInterval or setTimeout) within your useContext actions or middleware to handle the light transitions.				
 - Ensured the timers are accurately managed in useContext, including pausing, resetting, or adjusting based on user interactions.
 						
 5. UI and Interactions:
