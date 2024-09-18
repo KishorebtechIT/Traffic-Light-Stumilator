@@ -1,4 +1,4 @@
-In this project I Build a Traffic Light Simulator with Pedestrian Crossing.
+In this project I Build a <b>Traffic Light Simulator with Pedestrian Crossing</b>.
 
 install depencies using -- "npm install" <br/>
 run app using -- "npm run dev"
