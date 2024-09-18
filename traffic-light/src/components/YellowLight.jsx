@@ -1,6 +1,5 @@
-// src/components/YellowLight.jsx
 import React from 'react';
-import './Light.css'; // Shared styles
+import './Light.css'; 
 
 const YellowLight = ({ isActive }) => {
   return (

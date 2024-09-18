@@ -1,11 +1,10 @@
-// src/components/TrafficLight.jsx
 import React, { useState, useEffect } from 'react';
 import GreenLight from './GreenLight';
 import YellowLight from './YellowLight';
 import RedLight from './RedLight';
 import PedestrianButton from './PedestrianButton';
 import EmergencyOverrideButton from './EmergencyOverrideButton';
-import './TrafficLight.css'; // For overall styling
+import './TrafficLight.css'; 
 
 const TrafficLight = () => {
   // State variables
@@ -73,19 +72,29 @@ const TrafficLight = () => {
   };
 
   const handleEmergencyOverride = () => {
-    // Handle emergency override if needed
-    // Example implementation
+    // Handle emergency override
     setCurrentLight('Green');
     setTimer(10);
     setPedestrianRequested(false);
   };
+
+  // Effect hook for countdown timer
+  useEffect(() => {
+    if (timer > 0) {
+      const countdownInterval = setInterval(() => {
+        setTimer(prevTimer => prevTimer - 1);
+      }, 1000);
+
+      return () => clearInterval(countdownInterval);
+    }
+  }, [timer]);
 
   return (
     <div className="traffic-light">
       <RedLight isActive={currentLight === 'Red'} />
       <YellowLight isActive={currentLight === 'Yellow'} />
       <GreenLight isActive={currentLight === 'Green'} />
-      <div className="timer">{timer}s</div>
+      <div className="timer">{timer > 0 ? `${timer}s`:"changing..."}</div>
       <PedestrianButton onRequest={handlePedestrianRequest} />
       <EmergencyOverrideButton onOverride={handleEmergencyOverride} />
     </div>

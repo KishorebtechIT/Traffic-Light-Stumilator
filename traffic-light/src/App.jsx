@@ -1,8 +1,7 @@
-// src/App.jsx
 import React from 'react';
 import { TrafficLightProvider } from './TrafficLightContext';
 import TrafficLight from './components/TrafficLight';
-import './App.css'; // For additional styling
+import './App.css'; 
 
 const App = () => {
   return (

@@ -1,6 +1,5 @@
-// src/components/RedLight.jsx
 import React from 'react';
-import './Light.css'; // Shared styles
+import './Light.css';
 
 const RedLight = ({ isActive }) => {
   return (

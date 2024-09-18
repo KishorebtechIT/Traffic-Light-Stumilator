@@ -1,4 +1,3 @@
-// src/TrafficLightContext.jsx
 import React, { createContext, useReducer, useContext, useEffect } from 'react';
 
 // Initial state
@@ -81,7 +80,7 @@ export const TrafficLightProvider = ({ children }) => {
           break;
       }
     } else {
-      // Emergency Override: Turn on the Green light immediately
+      // Emergency Override
       dispatch({ type: CHANGE_LIGHT, payload: 'Green' });
       dispatch({ type: RESET_TIMER, payload: 10 });
       dispatch({ type: EMERGENCY_OVERRIDE, payload: false });

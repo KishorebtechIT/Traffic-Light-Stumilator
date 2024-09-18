@@ -1,6 +1,5 @@
-// src/components/PedestrianButton.jsx
 import React from 'react';
-import './PedestrianButton.css'; // For button styling
+import './PedestrianButton.css';
 
 const PedestrianButton = ({ onRequest }) => {
   return (

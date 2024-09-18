@@ -1,6 +1,5 @@
-// src/components/GreenLight.jsx
 import React from 'react';
-import './Light.css'; // Shared styles
+import './Light.css'; 
 
 const GreenLight = ({ isActive }) => {
   return (

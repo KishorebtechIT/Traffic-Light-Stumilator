@@ -1,6 +1,5 @@
-// src/components/EmergencyOverrideButton.jsx
 import React from 'react';
-import './EmergencyOverrideButton.css'; // For button styling
+import './EmergencyOverrideButton.css';
 
 const EmergencyOverrideButton = ({ onOverride }) => {
   return (
