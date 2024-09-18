@@ -1,6 +1,6 @@
 In this project I Build a Traffic Light Simulator with Pedestrian Crossing.
 
-install depencies using -- "npm install"
+install depencies using -- "npm install" <br/>
 run app using -- "npm run dev"
 
 implemented the below requirements:
